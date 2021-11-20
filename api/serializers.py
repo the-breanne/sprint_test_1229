@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import Movie
+from .models import Task
 
-class MovieSerializer(serializers.ModelSerializer):
+class TaskSerializer(serializers.ModelSerializer):
 
     class Meta:
-            model = Movie
+            model = Task
             fields = ('pk','name', 'description', 'year', 'rating')

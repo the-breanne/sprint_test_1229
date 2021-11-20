@@ -4,7 +4,7 @@ from django.db import models
 from django.utils import timezone
 
 # Create your models here.
-class Movie(models.Model):
+class Task(models.Model):
     name = models.CharField(max_length=50)
     description = models.TextField(max_length=360)
     year = models.IntegerField(blank=False, null=False)

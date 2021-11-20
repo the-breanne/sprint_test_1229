@@ -1,4 +1,4 @@
-"""movie URL Configuration
+"""task URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -25,7 +25,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('auth/', obtain_jwt_token),
-    path('', views.movie_list),
-    url(r'^api/movies/$', views.movie_list),
-    url(r'^api/movies/(?P<pk>[0-9]+)$', views.getMovie),
+    path('', views.task_list),
+    url(r'^api/tasks/$', views.task_list),
+    url(r'^api/tasks/(?P<pk>[0-9]+)$', views.getTask),
 ]
